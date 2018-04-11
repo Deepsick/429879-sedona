@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Артем Макаров](https://up.htmlacademy.ru/adaptive/14/user/429879).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Балабанович](https://up.htmlacademy.ru/htmlcss/20/user/6394).
 
 ---
 
