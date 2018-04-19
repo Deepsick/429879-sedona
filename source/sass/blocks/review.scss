@@ -1,0 +1,46 @@
+.review__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 27px;
+
+  font-size: $m-font-size;
+  line-height: $b-line-height;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #000000;
+}
+
+.review__text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 36px;
+
+  line-height: $m-line-height;
+  text-align: center;
+}
+
+.review__fieldset {
+  position: relative;
+
+  padding: 22px 20px;
+  margin: 0;
+
+  border: none;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -19px;
+    left: 0;
+    right: 0;
+
+    height: 1px;
+
+    background-color: #e5e5e5;
+  }
+}
+
+.review__button {
+  margin-left: 20px;
+}

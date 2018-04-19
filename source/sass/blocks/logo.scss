@@ -1,0 +1,14 @@
+.logo {
+  position: relative;
+  z-index: 1;
+
+  display: block;
+  width: 102px;
+  height: 83px;
+  margin: 0 auto;
+}
+
+.logo__image {
+  max-width: 100%;
+  height: auto;
+}

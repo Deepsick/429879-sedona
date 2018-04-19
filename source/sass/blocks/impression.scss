@@ -1,0 +1,72 @@
+.impression {
+  margin-top: 12px;
+}
+
+.impression__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+
+  @include fieldset-legend;
+}
+
+.impression__list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.impression__label {
+  position: relative;
+
+  display: block;
+  margin-bottom: 43px;
+  padding-left: 79px;
+
+  @include bold-label;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 1px;
+    top: -12px;
+
+    width: 55px;
+    height: 55px;
+
+    background-color: #f2f2f2;
+    border-radius: 50%;
+  }
+}
+
+.impression__radio {
+  &:checked + .impression__label::after {
+    content: "";
+
+    position: absolute;
+    left: 17px;
+    top: 4px;
+
+    width: 21px;
+    height: 21px;
+
+    background-color: #333333;
+    border-radius: 50%;
+  }
+
+  &:checked:active + .impression__label::after,
+  &:checked:focus + .impression__label::after {
+    opacity: 0.3;
+  }
+
+  &:hover + .impression__label::before {
+    background-color: #e5e5e5;
+  }
+
+  &:active + .impression__label::before,
+  &:focus + .impression__label::before {
+    background-color: #d5d5d5;
+  }
+}

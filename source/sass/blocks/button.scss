@@ -1,0 +1,35 @@
+.button {
+  display: inline-block;
+  padding: 15px 43px;
+
+  font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #81b3d2;
+  border: 2px solid #81b3d2;
+
+  &:hover {
+    background-color: #669ec0;
+    border-color: #669ec0;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+
+    background-color: #5496bd;
+    border-color: #5496bd;
+  }
+
+  &:disabled {
+    color: #ffffff;
+
+    background-color: #e5e5e5;
+    border-color: #81b3d2;
+  }
+}

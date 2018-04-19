@@ -1,0 +1,16 @@
+@mixin fieldset-legend {
+  font-size: $m-font-size;
+  line-height: $b-line-height;
+  font-weight: $b-font-weight;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #000000;
+}
+
+@mixin bold-label {
+  font-size: $m-font-size;
+  line-height: $b-line-height;
+  font-weight: $b-font-weight;
+  text-transform: none;
+  color: #000000;
+}

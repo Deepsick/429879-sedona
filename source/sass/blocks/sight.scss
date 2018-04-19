@@ -1,0 +1,73 @@
+.sight__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+
+  @include fieldset-legend;
+}
+
+.sight__list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.sight__label {
+  position: relative;
+
+  display: block;
+  padding-left: 79px;
+  margin-bottom: 54px;
+
+  @include bold-label;
+
+  &--no-margin {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 1px;
+    top: -13px;
+
+    width: 53px;
+    height: 54px;
+
+    background-color: #f2f2f2;
+    border-radius: 5px;
+  }
+}
+
+.sight__checkbox {
+  &:checked + .sight__label::after {
+    content: "";
+
+    position: absolute;
+    left: 17px;
+    top: 7px;
+
+    width: 24px;
+    height: 16px;
+
+    background-image: url("../img/icon-tick.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  &:checked:active + .sight__label::after,
+  &:checked:focus + .sight__label::after {
+    opacity: 0.3;
+  }
+
+  &:hover + .sight__label::before {
+    background-color: #e5e5e5;
+  }
+
+  &:active + .sight__label::before,
+  &:focus + .sight__label::before {
+    background-color: #d5d5d5;
+  }
+}

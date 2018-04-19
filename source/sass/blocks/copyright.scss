@@ -1,0 +1,34 @@
+.copyright {
+  width: 160px;
+  margin: 0 auto;
+  padding-bottom: 35px;
+}
+
+.copyright__text {
+  padding-right: 39px;
+
+  line-height: $b-line-height;
+  font-weight: $s-font-weight;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.copyright__link {
+  position: relative;
+}
+
+.copyright__academy-logo {
+  position: absolute;
+  top: -7px;
+  right: 1px;
+
+  &:hover {
+    fill: #81b3d2;
+  }
+
+  &:active {
+    fill: #000000;
+    opacity: 0.3;
+  }
+}

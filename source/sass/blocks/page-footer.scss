@@ -1,0 +1,19 @@
+.page-footer {
+  text-align: center;
+}
+
+.page-footer__hashtag {
+  display: block;
+  margin-bottom: 37px;
+
+  font-size: $l-font-size;
+  line-height: $b-line-height;
+  font-weight: $b-font-weight;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.page-footer__social {
+  margin: 0 auto;
+  margin-bottom: 43px;
+}

@@ -1,0 +1,24 @@
+.booking {
+  padding-top: 20px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.booking__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+
+  font-size: $l-font-size;
+  line-height: $b-line-height;
+  color: #000000;
+}
+
+.booking__text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+
+  line-height: $m-line-height;
+}
