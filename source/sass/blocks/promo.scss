@@ -1,0 +1,115 @@
+.promo {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.promo__title {
+  display: block;
+  margin-bottom: 28px;
+
+  font-size: $m-font-size;
+  line-height: $b-line-height;
+  color: #000000;
+}
+
+.promo__text {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+
+  line-height: $b-line-height;
+}
+
+.promo__list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.promo__item {
+  &--grey {
+    padding: 30px 37px;
+
+    background-color: #eeeeee;
+  }
+
+  &--border {
+    position: relative;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      right: 20px;
+
+      height: 1px;
+
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.promo__wrapper {
+  position: relative;
+
+  padding-top: 55px;
+  padding-bottom: 41px;
+
+  background-color: $blue-bg-color;
+
+  color: #ffffff;
+
+  &--triangle {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -22px;
+      left: 50%;
+
+      height: 37px;
+      width: 320px;
+      margin-left: -160px;
+
+      background-image: url("../img/bg-triangle.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.promo__reason-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+
+  font-size: $m-font-size;
+  line-height: $b-line-height;
+  font-weight: $b-font-weight;
+  color: #000000;
+
+  &--white {
+    color: #ffffff;
+  }
+}
+
+.promo__number {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.promo__description {
+  margin: 0;
+  padding: 0;
+}
+
+.promo__image {
+  max-width: 100%;
+  height: auto;
+}

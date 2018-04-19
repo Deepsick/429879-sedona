@@ -1,0 +1,25 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  bottom: -41px;
+  right: 20px;
+
+  display: block;
+  width: 23px;
+  height: 23px;
+
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/icon-menu.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  &--close {
+    top: 17px;
+
+    background-image: url("../img/icon-cross.svg");
+  }
+}
