@@ -1,17 +1,65 @@
 .town-reasons-list {
   margin: 0;
   padding: 0;
+  padding-top: 30px;
+  padding-left: 70px;
+  padding-right: 30px;
+
+  text-align: left;
 
   list-style-type: none;
 }
 
 .town-reasons-list__title {
+  position: relative;
+
   margin: 0;
   padding: 0;
+  margin-bottom: 15px;
 
   font-size: $m-font-size;
   line-height: $b-line-height;
   color: #000000;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--house::before {
+    left: -48px;
+    top: -9px;
+
+    width: 39px;
+    height: 37px;
+
+    background-image: url("../img/icon-house.svg");
+  }
+
+  &--gifts::before {
+    left: -45px;
+    top: -11px;
+
+    width: 32px;
+    height: 38px;
+
+    background-image: url("../img/icon-gift.svg");
+  }
+
+  &--food::before {
+    left: -51px;
+    top: -5px;
+
+    width: 40px;
+    height: 35px;
+
+    background-image: url("../img/icon-burger.svg");
+  }
 }
 
 .town-reasons-list__description {
@@ -20,38 +68,5 @@
 }
 
 .town-reasons-list__item {
-  position: relative;
-
-  &::before {
-    content: "";
-
-    position: absolute;
-    left: 10px;
-    top: 10px;
-
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  &--house::before {
-    width: 39px;
-    height: 37px;
-
-    background-image: url("../img/icon-house.svg");
-  }
-
-  &--gifts::before {
-    width: 32px;
-    height: 38px;
-
-    background-image: url("../img/icon-gift.svg");
-  }
-
-  &--food::before {
-    width: 40px;
-    height: 35px;
-
-    background-image: url("../img/icon-burger.svg");
-  }
+  margin-bottom: 28px;
 }

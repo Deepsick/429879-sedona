@@ -13,7 +13,7 @@
           <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list  site-list">
             <li class="site-list__item">
-              <a class="site-list__link  site-list__link--no-top-shadow">Главная</a>
+              <a class="site-list__link  site-list__link--no-top-shadow  site-list__link--current">Главная</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="photo.html">Фото и видео</a>
@@ -46,29 +46,31 @@
           <p class="promo__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           <ol class="promo__list">
             <li class="promo__item">
-              <div class="promo__wrapper promo__wrapper--triangle">
-                <h3 class="promo__reason-title promo__reason-title--white">Настоящий городок</h3>
-                <p class="promo__number">— №1 —</p>
-                <p class="promo__description">Cедона не аттракцион для туристов, там течет своя жизнь</p>
+              <div class="flex-container">
+                <div class="promo__wrapper promo__wrapper--triangle">
+                  <h3 class="promo__reason-title promo__reason-title--white">Настоящий городок</h3>
+                  <p class="promo__number">— №1 —</p>
+                  <p class="promo__description">Cедона не аттракцион для туристов, там течет своя жизнь</p>
+                </div>
+                <img class="promo__image" src="img/main-city-mobile@1x.jpg" alt="Мотеле как в кино!" width="320" height="260">
               </div>
-              <img class="promo__image" src="img/main-city-mobile@1x.jpg" alt="Мотеле как в кино!" width="320" height="260">
               <ul class="promo__list  town-reasons-list">
-                <li class="town-reasons-list__item town-reasons-list__item--house">
-                  <h4 class="town-reasons-list__title">Жилье</h4>
+                <li class="town-reasons-list__item">
+                  <h4 class="town-reasons-list__title  town-reasons-list__title--house">Жилье</h4>
                   <p class="town-reasons-list__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
-                <li class="town-reasons-list__item town-reasons-list__item--gifts">
-                  <h4 class="town-reasons-list__title">Сувениры</h4>
+                <li class="town-reasons-list__item">
+                  <h4 class="town-reasons-list__title  town-reasons-list__title--gifts">Сувениры</h4>
                   <p class="town-reasons-list__description">Не только китайского, но и местного производства!</p>
                 </li>
-                <li class="town-reasons-list__item town-reasons-list__item--food">
-                  <h4 class="town-reasons-list__title">Еда</h4>
+                <li class="town-reasons-list__item">
+                  <h4 class="town-reasons-list__title  town-reasons-list__title--food">Еда</h4>
                   <p class="town-reasons-list__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
               </ul>
             </li>
-            <li class="promo__item">
-              <div class="promo__wrapper">
+            <li class="promo__item  flex-container">
+              <div class="promo__wrapper  promo__wrapper--flex-order">
                 <h3 class="promo__reason-title promo__reason-title--white">Там есть мост дьявола</h3>
                 <p class="promo__number">— №2 —</p>
                 <p class="promo__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>

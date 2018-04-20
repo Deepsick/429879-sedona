@@ -3,9 +3,15 @@
 }
 
 .index-page__promo {
-  margin-top: 40px;
+  margin-top: 38px;
 }
 
 .index-page__booking {
   margin-bottom: 50px;
+}
+
+@media(min-width: $tablet-width) {
+  .index-page__page-main {
+    margin-top: 5px;
+  }
 }

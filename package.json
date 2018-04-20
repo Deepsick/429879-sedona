@@ -36,5 +36,8 @@
   ],
   "engines": {
     "node": "8.11"
+  },
+  "dependencies": {
+    "gulp-wait": "0.0.2"
   }
 }

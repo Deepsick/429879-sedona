@@ -23,3 +23,9 @@
     background-image: url("../img/icon-cross.svg");
   }
 }
+
+@media(min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
