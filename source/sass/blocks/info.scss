@@ -71,13 +71,10 @@
 
   .info__title {
     margin-bottom: 59px;
+    margin-right: 16px;
 
     font-size: $l-font-size;
     text-align: left;
-  }
-
-  .info__title {
-    margin-right: 16px;
   }
 
   .info__block {
@@ -95,7 +92,7 @@
 }
 
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .info {
     width: 401px;
     padding-left: 78px;

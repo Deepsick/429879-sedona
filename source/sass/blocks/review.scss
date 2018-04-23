@@ -49,7 +49,7 @@
   display: none;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .review__title {
     margin-bottom: 29px;
 
@@ -98,7 +98,7 @@
 }
 
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .review__text {
     margin-bottom: 46px;
   }

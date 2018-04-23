@@ -12,7 +12,7 @@
   margin-bottom: 71px;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .form-page__page-main {
     margin-top: 5px;
   }
@@ -27,10 +27,11 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .form-page__review {
     margin-bottom: 103px;
   }
+
   .form-page__page-footer {
     padding-left: 122px;
     padding-right: 101px;
