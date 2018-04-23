@@ -12,11 +12,12 @@ gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
+    .pipe(wait(50))
     .pipe(postcss([
       autoprefixer()
     ]))
     .pipe(gulp.dest("source/css"))
-    .pipe(wait(3000))
+    .pipe(wait(50))
     .pipe(server.stream());
 });
 

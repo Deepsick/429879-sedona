@@ -16,7 +16,27 @@
 .video-presentation__text {
   margin: 0;
   padding: 0 22px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 
   line-height: $m-line-height;
+}
+
+@media (min-width: $tablet-width) {
+  .video-presentation {
+    padding-right: 5px;
+  }
+
+  .video-presentation__title {
+    margin-bottom: 29px;
+
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .video-presentation__text {
+    width: 425px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 73px;
+  }
 }

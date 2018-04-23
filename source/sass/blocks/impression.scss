@@ -56,8 +56,7 @@
     border-radius: 50%;
   }
 
-  &:checked:active + .impression__label::after,
-  &:checked:focus + .impression__label::after {
+  &:checked:active + .impression__label::after {
     opacity: 0.3;
   }
 
@@ -68,5 +67,35 @@
   &:active + .impression__label::before,
   &:focus + .impression__label::before {
     background-color: #d5d5d5;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .impression {
+    width: 50%;
+    padding: 0;
+
+    order: -1;
+  }
+
+  .impression__title {
+    margin-bottom: 74px;
+
+    font-size: $l-font-size;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  .impression__label {
+    padding-left: 77px;
+    margin-bottom: 52px;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .impression__title {
+    padding-left: 77px;
+
+    letter-spacing: 0.2px;
   }
 }

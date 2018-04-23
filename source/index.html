@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta name="viewport" content="width=device-width; initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Седона</title>
     <link rel="stylesheet" href="css/style.css">
@@ -61,7 +61,10 @@
                 </li>
                 <li class="town-reasons-list__item">
                   <h4 class="town-reasons-list__title  town-reasons-list__title--gifts">Сувениры</h4>
-                  <p class="town-reasons-list__description">Не только китайского, но и местного производства!</p>
+                  <p class="town-reasons-list__description">
+                    <span class="town-reasons-list__excerpt">Не только китайского,</span>
+                    но и местного производства!
+                  </p>
                 </li>
                 <li class="town-reasons-list__item">
                   <h4 class="town-reasons-list__title  town-reasons-list__title--food">Еда</h4>
@@ -75,29 +78,33 @@
                 <p class="promo__number">— №2 —</p>
                 <p class="promo__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
-              <img class="promo__image" src="img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола" width="320" height="260">
+              <img class="promo__image" src="img/main-bridge-mobile@1x.jpg" alt="Мост дьявола" width="320" height="260">
             </li>
-            <li class="promo__item  promo__item--grey promo__item--border">
-              <h3 class="promo__reason-title">Небольшая площадь</h3>
-              <p class="promo__number">— №3 —</p>
-              <p class="promo__description">Все интересные места находятся очень близко</p>
-            </li>
-            <li class="promo__item  promo__item--grey promo__item--border">
-              <h3 class="promo__reason-title">Красивая дорога</h3>
-              <p class="promo__number">— №4 —</p>
-              <p class="promo__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </li>
-            <li class="promo__item  promo__item--grey">
-              <h3 class="promo__reason-title">Мало туристов</h3>
-              <p class="promo__number">— №5 —</p>
-              <p class="promo__description">Большинство едет в Гранд Каньон и толпится там</p>
-            </li>
+            <div class="flex-container">
+              <li class="promo__item  promo__item--grey promo__item--border">
+                <h3 class="promo__reason-title">Небольшая площадь</h3>
+                <p class="promo__number">— №3 —</p>
+                <p class="promo__description">Все интересные места находятся очень близко</p>
+              </li>
+              <li class="promo__item  promo__item--grey promo__item--border">
+                <h3 class="promo__reason-title">Красивая дорога</h3>
+                <p class="promo__number">— №4 —</p>
+                <p class="promo__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </li>
+              <li class="promo__item  promo__item--grey">
+                <h3 class="promo__reason-title  promo__reason-title--narrowed">Мало туристов</h3>
+                <p class="promo__number">— №5 —</p>
+                <p class="promo__description">Большинство едет в Гранд Каньон и толпится там</p>
+              </li>
+            </div>
           </ol>
         </section>
 
         <section class="index-page__booking  booking">
           <h2 class="booking__title">Заинтересовались?</h2>
-          <p class="booking__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <p class="booking__text">Укажите предполагаемые даты поездки,
+          <span class="booking__excerpt">и мы покажем вам лучшие предложения гостиниц в седоне</span>
+          </p>
           <a href="#" class="booking__button  button">Найти гостиницу</a>
         </section>
 

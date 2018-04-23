@@ -57,8 +57,7 @@
     background-repeat: no-repeat;
   }
 
-  &:checked:active + .sight__label::after,
-  &:checked:focus + .sight__label::after {
+  &:checked:active + .sight__label::after {
     opacity: 0.3;
   }
 
@@ -69,5 +68,79 @@
   &:active + .sight__label::before,
   &:focus + .sight__label::before {
     background-color: #d5d5d5;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .sight {
+    width: 100%;
+    margin-top: 25px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 28px;
+      left: 0;
+
+      height: 1px;
+      width: 128px;
+
+      background-color: #dbdbdb;
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 28px;
+      right: 0;
+
+      height: 1px;
+      width: 128px;
+
+      background-color: #dbdbdb;
+    }
+  }
+
+  .sight__title {
+    width: 290px;
+    padding-left: 3px;
+    margin-bottom: 36px;
+
+    letter-spacing: 0;
+    font-size: $l-font-size;
+  }
+
+  .sight__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 76px;
+    padding-right: 72px;
+  }
+
+  .sight__item {
+    margin-bottom: 8px;
+  }
+}
+
+
+@media(min-width: $desktop-width) {
+  .sight {
+    margin-top: 28px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 19px;
+
+    &::before,
+    &::after {
+      width: 282px;
+    }
+  }
+
+  .sight__list {
+    padding: 0;
+    padding-left: 4px;
   }
 }

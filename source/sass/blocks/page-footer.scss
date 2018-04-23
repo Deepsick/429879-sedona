@@ -17,3 +17,29 @@
   margin: 0 auto;
   margin-bottom: 43px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-right: 45px;
+    padding-left: 60px;
+  }
+
+  .page-footer__hashtag {
+    padding-top: 10px;
+  }
+
+  .page-footer__social {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding-right: 104px;
+    padding-left: 119px;
+    padding-bottom: 12px;
+  }
+}

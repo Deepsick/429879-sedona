@@ -11,5 +11,21 @@
 }
 
 .photo-page__video-presentation {
-  margin-bottom: 80px;
+  margin-bottom: 72px;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-page__page-main {
+    margin-top: 5px;
+  }
+
+  .photo-page__gallery {
+    margin-bottom: 63px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-page__video-presentation {
+    margin-bottom: 116px;
+  }
 }

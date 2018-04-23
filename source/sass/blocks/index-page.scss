@@ -7,11 +7,25 @@
 }
 
 .index-page__booking {
-  margin-bottom: 50px;
+  margin-bottom: 49px;
 }
 
-@media(min-width: $tablet-width) {
+.index-page__about {
+  margin-bottom: 31px;
+}
+
+@media (min-width: $tablet-width) {
   .index-page__page-main {
     margin-top: 5px;
+  }
+
+  .index-page__booking {
+    margin-bottom: 58px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .index-page__booking {
+    margin-bottom: 66px;
   }
 }

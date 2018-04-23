@@ -16,7 +16,6 @@
 .promo__text {
   display: block;
   margin: 0;
-  padding: 0;
   margin-bottom: 25px;
   padding: 0 8px;
 
@@ -32,13 +31,16 @@
 
 .promo__item {
   &--grey {
-    padding: 30px 37px;
+    padding: 30px 31px;
+    padding-top: 27px;
 
     background-color: #eeeeee;
   }
 
   &--border {
     position: relative;
+
+    padding-top: 23px;
 
     &::after {
       content: "";
@@ -59,7 +61,7 @@
   position: relative;
 
   padding: 0 14px;
-  padding-top: 55px;
+  padding-top: 38px;
   padding-bottom: 41px;
 
   background-color: $blue-bg-color;
@@ -67,6 +69,8 @@
   color: #ffffff;
 
   &--triangle {
+    padding-top: 55px;
+
     &::before {
       content: "";
 
@@ -117,7 +121,28 @@
   height: auto;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .promo__item--grey {
+    width: 20.7%;
+    min-height: 169px;
+    padding: 0 6.4%;
+    padding-top: 44px;
+    padding-bottom: 43px;
+
+    &:nth-child(2) {
+      width: 19.3%;
+      padding-left: 7%;
+      padding-right: 7%;
+    }
+  }
+
+  .promo__item--border {
+    &::after {
+      width: 0;
+      height: 0;
+    }
+  }
+
   .promo__title {
     padding: 0 117px;
     margin-bottom: 31px;
@@ -169,7 +194,31 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .promo__item--grey {
+    width: 283px;
+    min-height: 0;
+    padding-left: 59px;
+    padding-right: 58px;
+    padding-bottom: 63px;
+
+    &:first-child {
+      padding-left: 59px;
+      padding-right: 58px;
+    }
+
+    &:nth-child(2) {
+      width: 279px;
+      padding-left: 61px;
+      padding-right: 60px;
+    }
+
+    &:last-child {
+      // padding-left: 70px;
+      // padding-right: 64px;
+    }
+  }
+
   .promo__title {
     padding: 0 380px;
 
@@ -179,10 +228,15 @@
   .promo__wrapper {
     padding-top: 51px;
     padding-bottom: 57px;
-   }
+  }
 
   .promo__reason-title {
     padding-left: 58px;
     padding-right: 59px;
-   }
+
+    &--narrowed {
+      padding-left: 62px;
+      padding-right: 62px;
+    }
+  }
 }

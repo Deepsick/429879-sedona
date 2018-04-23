@@ -8,7 +8,7 @@
 .booking__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 
   font-size: $l-font-size;
   line-height: $b-line-height;
@@ -17,8 +17,40 @@
 
 .booking__text {
   margin: 0;
-  padding: 0;
-  margin-bottom: 40px;
+  padding: 0 29px;
+  margin-bottom: 35px;
 
   line-height: $m-line-height;
+}
+
+@media (min-width: $tablet-width) {
+  .booking {
+    padding-top: 54px;
+  }
+
+  .booking__title {
+    margin-bottom: 29px;
+
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .booking__text {
+    margin-bottom: 41px;
+  }
+
+  .booking__excerpt {
+    display: block;
+  }
+
+  .booking__button {
+    padding-left: 134px;
+    padding-right: 134px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .booking__text {
+    margin-bottom: 47px;
+  }
 }

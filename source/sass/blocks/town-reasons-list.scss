@@ -4,6 +4,7 @@
   padding-top: 30px;
   padding-left: 70px;
   padding-right: 30px;
+  padding-bottom: 10px;
 
   text-align: left;
 
@@ -69,4 +70,108 @@
 
 .town-reasons-list__item {
   margin-bottom: 28px;
+}
+
+@media (min-width: $tablet-width) {
+  .town-reasons-list {
+    display: flex;
+    padding: 0;
+    padding-top: 133px;
+    padding-bottom: 34px;
+
+    text-align: center;
+  }
+
+  .town-reasons-list__item {
+    width: 21.7%;
+    padding: 0 5.8%;
+
+    &:nth-child(2) {
+      order: 2;
+    }
+
+    &:last-child {
+      width: 20.6%;
+      padding: 0 6.35%;
+    }
+  }
+
+  .town-reasons-list__title {
+    margin: 22px;
+
+    font-size: $l-font-size;
+
+    &--house::before {
+      left: 25px;
+      top: -99px;
+
+      width: 75px;
+      height: 72px;
+    }
+
+    &--gifts::before {
+      left: 30px;
+      top: -102px;
+
+      width: 66px;
+      height: 75px;
+    }
+
+    &--food::before {
+      left: 19px;
+      top: -96px;
+
+      width: 76px;
+      height: 79px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .town-reasons-list {
+    padding-bottom: 54px;
+  }
+
+  .town-reasons-list__item {
+    width: 21.8%;
+    padding: 0 5.75%;
+
+    &:nth-child(2) {
+      order: 2;
+    }
+
+    &:last-child {
+      width: 24.3%;
+      padding: 0 4.5%;
+    }
+  }
+
+  .town-reasons-list__title {
+    &--house::before {
+      left: 70px;
+      top: -99px;
+    }
+
+    &--gifts::before {
+      left: 78px;
+      top: -102px;
+    }
+
+    &--food::before {
+      left: 87px;
+      top: -96px;
+    }
+  }
+
+  .town-reasons-list__description {
+    &::before {
+      content: "";
+
+      width: 10px;
+    }
+  }
+
+  .town-reasons-list__excerpt {
+    padding: 0 39px;
+  }
 }
