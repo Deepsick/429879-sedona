@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta name="viewport" content="width=device-width; initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Фото и видео города Седона</title>
     <link rel="stylesheet" href="css/style.css">
@@ -16,7 +16,7 @@
               <a class="site-list__link  site-list__link--no-top-shadow" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link">Фото и видео</a>
+              <a class="site-list__link  site-list__link--current">Фото и видео</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="form.html">Форма отзыва</a>
@@ -48,33 +48,49 @@
               <a class="gallery__full-image-link" href="#">
                 <img class="gallery__image" src="img/photo-sunset-mobile@1x.jpg" alt="Фото гор и дороги" width="280" height="280">
               </a>
-              <h3 class="gallery__item-heading">Неродные просторы</h3>
-              <p class="gallery__author">Автор фото: Борис</p>
-              <button class="gallery__like" type="button">1350</button>
+              <div class="gallery__desc  flex-container">
+                <div class="gallery__text-desc">
+                  <h3 class="gallery__item-heading">Неродные просторы</h3>
+                  <p class="gallery__author">Автор фото: Борис</p>
+                </div>
+                <button class="gallery__like" type="button">1350</button>
+              </div>
             </li>
             <li class="gallery__item">
               <a class="gallery__full-image-link" href="#">
                 <img class="gallery__image" src="img/photo-cactus-mobile@1x.jpg" alt="Местное растение" width="280" height="280">
               </a>
-              <h3 class="gallery__item-heading">Местная растительность</h3>
-              <p class="gallery__author">Автор фото: Сергей</p>
-              <button class="gallery__like" type="button">143</button>
+              <div class="gallery__desc  flex-container">
+                <div class="gallery__text-desc">
+                  <h3 class="gallery__item-heading">Местная растительность</h3>
+                  <p class="gallery__author">Автор фото: Сергей</p>
+                </div>
+                <button class="gallery__like" type="button">143</button>
+              </div>
             </li>
             <li class="gallery__item">
               <a class="gallery__full-image-link" href="#">
                 <img class="gallery__image" src="img/photo-roads-mobile@1x.jpg" alt="Дорога, ведущая на север через лес" width="280" height="280">
               </a>
-              <h3 class="gallery__item-heading">Дорога на север</h3>
-              <p class="gallery__author">Автор фото: Петр</p>
-              <button class="gallery__like" type="button">96</button>
+              <div class="gallery__desc  gallery__desc--dark  flex-container">
+                <div class="gallery__text-desc">
+                  <h3 class="gallery__item-heading">Дорога на север</h3>
+                  <p class="gallery__author">Автор фото: Петр</p>
+                </div>
+                <button class="gallery__like" type="button">96</button>
+              </div>
             </li>
             <li class="gallery__item  gallery__item--bordered">
               <a class="gallery__full-image-link" href="#">
                 <img class="gallery__image" src="img/main-bridge-mobile@1x.jpg" alt="Мост Дьявола" width="280" height="280">
               </a>
-              <h3 class="gallery__item-heading">Мост Дьявола</h3>
-              <p class="gallery__author">Автор фото: Антон</p>
-              <button class="gallery__like" type="button">254</button>
+              <div class="gallery__desc  flex-container">
+                <div class="gallery__text-desc">
+                  <h3 class="gallery__item-heading">Мост Дьявола</h3>
+                  <p class="gallery__author">Автор фото: Антон</p>
+                </div>
+                <button class="gallery__like" type="button">254</button>
+              </div>
             </li>
           </ul>
         </section>

@@ -3,40 +3,4 @@
 @import "global";
 @import "variables";
 @import "mixins";
-
-/*  Примеси */
-@import "blocks/button";
-@import "blocks/visually-hidden";
-
-/* index.html */
-@import "blocks/index-page";
-@import "blocks/site-wrapper";
-@import "blocks/page-header";
-@import "blocks/logo";
-@import "blocks/main-nav";
-@import "blocks/site-list";
-@import "blocks/page-main";
-@import "blocks/intro";
-@import "blocks/promo";
-@import "blocks/town-reasons-list";
-@import "blocks/booking";
-@import "blocks/about";
-@import "blocks/page-footer";
-@import "blocks/social";
-@import "blocks/copyright";
-
-/* photo.html */
-@import "blocks/photo-page";
-@import "blocks/gallery";
-@import "blocks/video-presentation";
-@import "blocks/video";
-
-/* form.html */
-@import "blocks/form-page";
-@import "blocks/review";
-@import "blocks/info";
-@import "blocks/contacts";
-@import "blocks/impression";
-@import "blocks/sight";
-@import "blocks/emotions";
-@import "blocks/modal";
+@import "blocks/blocks";

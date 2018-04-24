@@ -6,15 +6,18 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var wait = require("gulp-wait");
 
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
+    .pipe(wait(50))
     .pipe(postcss([
       autoprefixer()
     ]))
     .pipe(gulp.dest("source/css"))
+    .pipe(wait(50))
     .pipe(server.stream());
 });
 

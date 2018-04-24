@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta name="viewport" content="width=device-width; initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Форма отзыва сайта Седона</title>
     <link rel="stylesheet" href="css/style.css">
@@ -19,7 +19,7 @@
               <a class="site-list__link" href="photo.html">Фото и видео</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link">Форма отзыва</a>
+              <a class="site-list__link  site-list__link--current">Форма отзыва</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link  site-list__link--shadow" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
@@ -61,14 +61,16 @@
             </fieldset>
             <fieldset class="review__fieldset  contacts">
               <legend class="contacts__title">Контактная информация:</legend>
-              <p class="contacts__block  contacts__block--phone-icon">
-                <label class="contacts__label" for="phone">Контактный телефон*:</label>
-                <input id="phone" class="contacts__input" type="tel" name="phone" placeholder="Введите телефон" required>
-              </p>
-              <p class="contacts__block  contacts__block--email-icon">
-                <label class="contacts__label" for="email">Электронная почта*:</label>
-                <input id="email" class="contacts__input" type="email" name="email" placeholder="Введите e-mail" required>
-              </p>
+              <div class="contacts__flex-container">
+                <p class="contacts__block  contacts__block--phone-icon">
+                  <label class="contacts__label" for="phone"><span class="contacts__hidden-block">Контактный</span> телефон*:</label>
+                  <input id="phone" class="contacts__input" type="tel" name="phone" placeholder="Введите телефон" required>
+                </p>
+                <p class="contacts__block  contacts__block--email-icon">
+                  <label class="contacts__label" for="email">Электронная почта*:</label>
+                  <input id="email" class="contacts__input" type="email" name="email" placeholder="Введите e-mail" required>
+                </p>
+              </div>
             </fieldset>
             <fieldset class="review__fieldset  impression">
               <legend class="impression__title">Ваше Общее впечатление:</legend>
@@ -113,11 +115,12 @@
               <textarea id="emotions-textarea" class="emotions__field" name="message" placeholder="Опишите подробно все свои восторги " cols="30" rows="5"></textarea>
             </p>
             <button class="review__button  button" type="submit">Отправить отзыв</button>
+            <p class="review__excerpt">* — обязательные поля</p>
           </form>
         </section>
       </main>
 
-      <footer class="page-footer">
+      <footer class="form-page__page-footer  page-footer">
         <b class="page-footer__hashtag">#VisitSedona</b>
         <ul class="page-footer__social  social">
           <li class="social__item">

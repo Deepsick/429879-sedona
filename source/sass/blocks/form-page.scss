@@ -11,3 +11,29 @@
 .form-page__review {
   margin-bottom: 71px;
 }
+
+@media (min-width: $tablet-width) {
+  .form-page__page-main {
+    margin-top: 5px;
+  }
+
+  .form-page__review {
+    margin-bottom: 97px;
+  }
+
+  .form-page__page-footer {
+    padding-right: 42px;
+    padding-left: 62px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-page__review {
+    margin-bottom: 103px;
+  }
+
+  .form-page__page-footer {
+    padding-left: 122px;
+    padding-right: 101px;
+  }
+}

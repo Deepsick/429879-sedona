@@ -1,4 +1,12 @@
 .site-wrapper {
-  width: 320px;
+  width: auto;
   margin: 0 auto;
+
+  background-color: #ffffff;
+}
+
+@media (min-width: $desktop-width) {
+  .site-wrapper {
+    width: 1200px;
+  }
 }
