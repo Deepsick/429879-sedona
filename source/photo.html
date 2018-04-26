@@ -10,8 +10,10 @@
     <div class="site-wrapper">
       <header class="page-header">
         <nav class="main-nav">
-          <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-nav__list  site-list">
+          <!-- класс main-nav__toggle--close переключает внешний вид кнопки-->
+          <button class="main-nav__toggle  main-nav__toggle--nojs"><span class="visually-hidden">Открыть меню</span></button>
+          <!--класс site-list--opened переключает состояние меню-->
+          <ul class="main-nav__list  site-list  site-list--nojs">
             <li class="site-list__item">
               <a class="site-list__link  site-list__link--no-top-shadow" href="index.html">Главная</a>
             </li>

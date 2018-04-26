@@ -52,3 +52,40 @@
   padding: 22px 0;
   width: 100%;
 }
+
+
+@media(min-width: $tablet-width) {
+  .modal {
+    &--error {
+      box-sizing: border-box;
+      width: 400px;
+    }
+
+    &--success {
+      box-sizing: border-box;
+      width: 640px;
+      padding-left: 108px;
+      padding-right: 108px;
+    }
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 40px;
+    &--error {
+      width: 213px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .modal__button {
+    font-size: $l-font-size;
+    line-height: $b-line-height;
+  }
+
+  .modal__wrapper {
+    padding-left: 91px;
+    padding-right: 91px;
+  }
+}
