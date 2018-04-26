@@ -122,10 +122,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .promo__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .promo__item:nth-child(2) {
+    width: 100%;
+  }
+
   .promo__item--grey {
     width: 20.7%;
+    max-width: 33.3%;
     min-height: 169px;
-    padding: 0 6.4%;
+    padding: 0 6.317%;
     padding-top: 44px;
     padding-bottom: 43px;
 

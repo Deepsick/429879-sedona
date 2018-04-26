@@ -102,27 +102,30 @@
     font-size: $l-font-size;
 
     &--house::before {
-      left: 25px;
+      left: 50%;
       top: -99px;
 
       width: 75px;
       height: 72px;
+      margin-left: -37px;
     }
 
     &--gifts::before {
-      left: 30px;
+      left: 50%;
       top: -102px;
 
       width: 66px;
       height: 75px;
+      margin-left: -33px;
     }
 
     &--food::before {
-      left: 19px;
+      left: 50%;
       top: -96px;
 
       width: 76px;
       height: 79px;
+      margin-left: -38px;
     }
   }
 }
@@ -150,16 +153,22 @@
     &--house::before {
       left: 70px;
       top: -99px;
+
+      margin-left: 0;
     }
 
     &--gifts::before {
       left: 78px;
       top: -102px;
+
+      margin-left: 0;
     }
 
     &--food::before {
       left: 87px;
       top: -96px;
+
+      margin-left: 0;
     }
   }
 
