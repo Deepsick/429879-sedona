@@ -137,6 +137,25 @@
     background-color: rgba(0, 0, 0, 0.6);
   }
 
+  .video__button {
+    &:hover .video__fullscreen-icon,
+    &:hover .video__replay-icon,
+    &:hover .video__subtitles-icon {
+      fill: #ffffff;
+
+      opacity: 0.6;
+    }
+
+    &:active .video__fullscreen-icon,
+    &:active .video__replay-icon,
+    &:active .video__subtitles-icon,
+    &:focus .video__fullscreen-icon,
+    &:focus .video__replay-icon,
+    &:focus .video__subtitles-icon {
+      opacity: 0.3;
+    }
+  }
+
   .video__replay-icon,
   .video__subtitles-icon,
   .video__fullscreen-icon {

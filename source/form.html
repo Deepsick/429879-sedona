@@ -10,8 +10,10 @@
     <div class="site-wrapper">
       <header class="page-header">
         <nav class="main-nav">
-          <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-nav__list  site-list">
+          <!-- класс main-nav__toggle--close переключает внешний вид кнопки-->
+          <button class="main-nav__toggle  main-nav__toggle--nojs"><span class="visually-hidden">Открыть меню</span></button>
+          <!--класс site-list--opened переключает состояние меню-->
+          <ul class="main-nav__list  site-list  site-list--nojs">
             <li class="site-list__item">
               <a class="site-list__link  site-list__link--no-top-shadow" href="index.html">Главная</a>
             </li>
@@ -151,7 +153,7 @@
       </footer>
 
       <section class="modal  modal--error">
-        <h2 class="modal__title">Что-то пошло не так!</h2>
+        <h2 class="modal__title modal__title--error">Что-то пошло не так!</h2>
         <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <button class="modal__button button" type="button">Ок</button>
       </section>

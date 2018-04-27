@@ -30,6 +30,24 @@
     color: #ffffff;
 
     background-color: #e5e5e5;
-    border-color: #81b3d2;
+    border-color: #e5e5e5;
+  }
+
+  &--disabled {
+    color: #ffffff;
+
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+
+    pointer-events: none;
+    cursor: default;
+  }
+
+  &--disabled:hover,
+  &--disabled:active {
+    color: #ffffff;
+
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
   }
 }

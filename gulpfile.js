@@ -11,13 +11,14 @@ var wait = require("gulp-wait");
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
     .pipe(plumber())
+    .pipe(wait(500))
     .pipe(sass())
-    .pipe(wait(50))
+    .pipe(wait(500))
     .pipe(postcss([
       autoprefixer()
     ]))
     .pipe(gulp.dest("source/css"))
-    .pipe(wait(50))
+    .pipe(wait(500))
     .pipe(server.stream());
 });
 
