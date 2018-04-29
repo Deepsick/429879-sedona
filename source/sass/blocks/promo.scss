@@ -151,6 +151,12 @@
     padding-right: 7%;
   }
 
+  .promo__item:nth-child(4),
+  .promo__item:nth-child(3),
+  .promo__item:last-child {
+    padding-top: 44px;
+  }
+
   .promo__item--grey {
     width: 20.7%;
     max-width: 33.3%;
