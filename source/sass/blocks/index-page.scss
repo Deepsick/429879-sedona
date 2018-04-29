@@ -3,7 +3,7 @@
 }
 
 .index-page__promo {
-  margin-top: 38px;
+  margin-top: 40px;
 }
 
 .index-page__booking {
@@ -11,7 +11,7 @@
 }
 
 .index-page__about {
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
@@ -19,8 +19,16 @@
     margin-top: 5px;
   }
 
+  .index-page__promo {
+    margin-top: 51px;
+  }
+
   .index-page__booking {
     margin-bottom: 58px;
+  }
+
+  .index-page__about {
+    margin-bottom: 31px;
   }
 }
 

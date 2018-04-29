@@ -1,6 +1,9 @@
 .contacts__title {
   margin: 0;
   padding: 0;
+  padding-right: 2px;
+
+  letter-spacing: 0;
 
   @include fieldset-legend;
 }
@@ -92,9 +95,9 @@
     position: relative;
 
     width: 100%;
-    margin-top: 34px;
+    margin-top: 15px;
     padding: 0;
-    padding-top: 26px;
+    padding-top: 25px;
 
     &::before {
       content: "";
@@ -124,14 +127,12 @@
   }
 
   .contacts__title {
-    padding-left: 3px;
-
-    letter-spacing: 0;
+    letter-spacing: 0.1px;
     font-size: $l-font-size;
   }
 
   .contacts__label {
-    padding-left: 24px;
+    padding-left: 22px;
   }
 
   .contacts__input {
@@ -144,10 +145,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 76px;
+    padding-top: 74px;
+    margin-top: 13px;
 
     &::before,
     &::after {
+      top: 12px;
+
       width: 282px;
     }
   }
@@ -163,7 +167,7 @@
 
     &::after {
       right: 77px;
-      top: 1px;
+      top: 0;
     }
   }
 
@@ -183,5 +187,7 @@
 
   .contacts__input {
     width: auto;
+    min-height: 58px;
+    margin-bottom: 12px;
   }
 }

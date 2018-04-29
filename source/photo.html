@@ -29,7 +29,11 @@
           </ul>
         </nav>
         <a class="page-header__logo  logo" href="index.html">
-          <img class="logo__image" src="img/logo-sedona-mobile.svg" alt="Логотип Седона" width="102" height="83">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="logo__image" src="img/logo-sedona-mobile.svg" alt="Логотип Седона" width="102" height="83">
+          </picture>
         </a>
       </header>
 
@@ -37,7 +41,7 @@
 
         <section class="photo-page__intro  intro  intro--inner-page">
           <h2 class="visually-hidden">Добро пожаловать в Седону!</h2>
-          <img class="intro__image" src="img/text-sedona.svg" alt="Welcome to the the Gorgeous Sedona" width="229" height="39">
+          <img class="intro__image  intro__image--inner-page" src="img/text-sedona.svg" alt="Welcome to the the Gorgeous Sedona" width="229" height="39">
         </section>
 
         <h1 class="page-main__title">Фото и видео</h1>
@@ -48,9 +52,13 @@
           <ul class="gallery__list">
             <li class="gallery__item">
               <a class="gallery__full-image-link" href="#">
-                <img class="gallery__image" src="img/photo-sunset-mobile@1x.jpg" alt="Фото гор и дороги" width="280" height="280">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                  <img class="gallery__image  gallery__image--poster" src="img/photo-sunset-mobile@1x.jpg" alt="Фото гор и дороги" srcset="img/photo-sunset-mobile@2x.jpg 2x">
+                </picture>
               </a>
-              <div class="gallery__desc  flex-container">
+              <div class="gallery__desc  gallery__desc--poster  flex-container">
                 <div class="gallery__text-desc">
                   <h3 class="gallery__item-heading">Неродные просторы</h3>
                   <p class="gallery__author">Автор фото: Борис</p>
@@ -60,7 +68,11 @@
             </li>
             <li class="gallery__item">
               <a class="gallery__full-image-link" href="#">
-                <img class="gallery__image" src="img/photo-cactus-mobile@1x.jpg" alt="Местное растение" width="280" height="280">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                  <img class="gallery__image" src="img/photo-cactus-mobile@1x.jpg" alt="Местное растение" srcset="img/photo-cactus-mobile@2x.jpg 2x">
+                </picture>
               </a>
               <div class="gallery__desc  flex-container">
                 <div class="gallery__text-desc">
@@ -72,7 +84,11 @@
             </li>
             <li class="gallery__item">
               <a class="gallery__full-image-link" href="#">
-                <img class="gallery__image" src="img/photo-roads-mobile@1x.jpg" alt="Дорога, ведущая на север через лес" width="280" height="280">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                  <img class="gallery__image" src="img/photo-roads-mobile@1x.jpg" alt="Дорога, ведущая на север через лес" srcset="img/photo-roads-mobile@2x.jpg 2x">
+                </picture>
               </a>
               <div class="gallery__desc  gallery__desc--dark  flex-container">
                 <div class="gallery__text-desc">
@@ -84,7 +100,11 @@
             </li>
             <li class="gallery__item  gallery__item--bordered">
               <a class="gallery__full-image-link" href="#">
-                <img class="gallery__image" src="img/main-bridge-mobile@1x.jpg" alt="Мост Дьявола" width="280" height="280">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                  <img class="gallery__image" src="img/photo-bridge-mobile@1x.jpg" alt="Мост Дьявола" srcset="img/photo-bridge-mobile@2x.jpg 2x">
+                </picture>
               </a>
               <div class="gallery__desc  flex-container">
                 <div class="gallery__text-desc">
@@ -102,7 +122,11 @@
           <p class="video-presentation__title">Все еще сомневаетесь?</p>
           <p class="video-presentation__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           <div class="video-presentation__video  video">
-            <img class="video__image" src="img/video-mobile@1x.jpg" alt="Видео" width="321" height="201">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img class="video__image" src="img/video-mobile@1x.jpg" alt="Видео" srcset="img/video-mobile@2x.jpg 2x">
+            </picture>
             <div class="video__scroll"><span class="visually-hidden">Ползунок для перемотки видео</span></div>
             <div class="video__controls">
               <button class="video__button">

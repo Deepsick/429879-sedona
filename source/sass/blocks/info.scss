@@ -2,6 +2,9 @@
   margin: 0;
   margin-bottom: 1px;
   padding: 0;
+  padding-right: 2px;
+
+  letter-spacing: 0.3px;
 
   @include fieldset-legend;
 }
@@ -10,20 +13,29 @@
   margin: 0;
   padding: 0;
   width: 280px;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
+
+  &:nth-child(2) > .info__label {
+    margin-right: 14px;
+  }
+
+  &:last-child > .info__label {
+    margin-right: 18px;
+  }
 }
 
 .info__label {
   margin-right: 13px;
+  padding-top: 2px;
 
   line-height: $b-line-height;
 }
 
 .info__input {
   box-sizing: border-box;
-  padding: 11px 17px;
+  padding: 12px 17px;
   padding-right: 0;
   min-width: 0;
 
@@ -65,7 +77,7 @@
   .info {
     width: 40.9%;
     padding: 0;
-    margin-top: 12px;
+    margin-top: 10px;
     padding-left: 9.1%;
   }
 
@@ -79,15 +91,18 @@
 
   .info__block {
     width: 265px;
+
+    &:last-child > .info__label {
+      margin-right: 17px;
+    }
   }
 
   .info__label {
-    padding-top: 4px;
+    padding-top: 3px;
   }
 
   .info__input {
-    padding-left: 19px;
-    padding-right: 19px;
+    padding-left: 17px;
   }
 }
 
@@ -95,7 +110,7 @@
 @media (min-width: $desktop-width) {
   .info {
     width: 401px;
-    padding-left: 78px;
+    padding-left: 79px;
   }
 
   .info__block {
@@ -103,6 +118,7 @@
   }
 
   .info__input {
+    min-height: 58px;
     flex-grow: 1;
   }
 }

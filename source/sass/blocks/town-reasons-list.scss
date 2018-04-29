@@ -1,7 +1,7 @@
 .town-reasons-list {
   margin: 0;
   padding: 0;
-  padding-top: 30px;
+  padding-top: 34px;
   padding-left: 70px;
   padding-right: 30px;
   padding-bottom: 10px;
@@ -76,7 +76,7 @@
   .town-reasons-list {
     display: flex;
     padding: 0;
-    padding-top: 133px;
+    padding-top: 136px;
     padding-bottom: 34px;
 
     text-align: center;
@@ -116,7 +116,7 @@
 
       width: 66px;
       height: 75px;
-      margin-left: -33px;
+      margin-left: -31px;
     }
 
     &--food::before {
@@ -132,7 +132,8 @@
 
 @media (min-width: $desktop-width) {
   .town-reasons-list {
-    padding-bottom: 54px;
+    padding-bottom: 56px;
+    padding-top: 137px;
   }
 
   .town-reasons-list__item {

@@ -9,8 +9,8 @@
 }
 
 .logo__image {
-  max-width: 100%;
-  height: auto;
+  width: 102px;
+  height: 83px;
 }
 
 @media (min-width: $tablet-width) {
@@ -20,5 +20,19 @@
     left: 50%;
 
     margin-left: -51px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    width: 188px;
+    height: 96px;
+
+    margin-left: -94px;
+  }
+
+  .logo__image {
+    width: 188px;
+    height: 96px;
   }
 }

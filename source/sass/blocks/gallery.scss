@@ -16,9 +16,14 @@
 
 .gallery__item {
   padding: 23px 21px;
+  padding-right: 20px;
   padding-bottom: 15px;
 
   border-top: #e5e5e5 solid 1px;
+
+  &:nth-child(3) {
+    padding-top: 24px;
+  }
 
   &--bordered {
     border-bottom: #e5e5e5 solid 1px;
@@ -27,9 +32,9 @@
 
 .gallery__image {
   display: block;
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
+  height: 280px;
+  width: 100%;
+  margin-bottom: 16px;
 }
 
 .gallery__item-heading {
@@ -37,14 +42,14 @@
   margin: 0;
 
   font-size: $s-font-size;
-  line-height: $m-line-height;
+  line-height: 23px;
   color: #000000;
 }
 
 .gallery__author {
   margin: 0;
   padding: 0;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
 
   line-height: $m-line-height;
   text-transform: none;
@@ -67,7 +72,7 @@
     content: "";
 
     position: absolute;
-    left: -2px;
+    left: -1px;
     top: 0;
 
     width: 23px;
@@ -105,25 +110,43 @@
       width: 100%;
     }
 
+    &:nth-child(3) {
+      padding-top: 0;
+    }
+
     &--bordered {
       border-bottom: 0;
     }
   }
 
   .gallery__image {
+    width: 100%;
+    height: 267px;
     margin: 0;
+
+    &--poster {
+      height: 400px;
+    }
   }
 
   .gallery__desc {
     align-items: center;
     justify-content: space-between;
-    padding: 13px 20px;
-    padding-right: 15px;
+    padding: 0 20px;
+    padding-top: 16px;
+    padding-bottom: 11px;
+    padding-right: 24px;
 
     background-color: #f2f2f2;
 
     &--dark {
+      padding-right: 31px;
+
       background-color: #eaeaea;
+    }
+
+    &--poster {
+      padding-right: 15px;
     }
   }
 
@@ -131,8 +154,8 @@
     margin-bottom: 5px;
 
     &::before {
-      left: 3px;
-      top: -2px;
+      left: 4px;
+      top: 1px;
     }
   }
 }
@@ -140,6 +163,10 @@
 @media (min-width: $desktop-width) {
   .gallery {
     padding: 0;
+  }
+
+  .gallery__text {
+    padding-right: 25px;
   }
 
   .gallery__item {
@@ -152,12 +179,20 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 5px;
+    bottom: -1px;
 
     padding-right: 23px;
     padding-left: 21px;
 
     background-color: rgba(0, 0, 0, 0.3);
+
+    &--poster {
+      padding-right: 16px;
+    }
+
+    &--dark {
+      padding-right: 31px;
+    }
   }
 
   .gallery__item-heading {
@@ -165,6 +200,8 @@
   }
 
   .gallery__author {
+    margin-bottom: 6px;
+
     color: #ffffff;
   }
 
@@ -173,8 +210,19 @@
 
     &::before {
       background-image: url("../img/icon-like-white.svg");
-      left: 3px;
-      top: -2px;
+      left: 5px;
+      top: 0;
+    }
+  }
+
+  .gallery__image {
+    width: 400px;
+    height: 267px;
+    margin: 0;
+
+    &--poster {
+      width: 1200px;
+      height: 400px;
     }
   }
 }

@@ -54,7 +54,7 @@
 }
 
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .modal {
     &--error {
       box-sizing: border-box;
@@ -72,6 +72,7 @@
   .modal__title {
     font-size: 30px;
     line-height: 40px;
+
     &--error {
       width: 213px;
       margin-left: auto;

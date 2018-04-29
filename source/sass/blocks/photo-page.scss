@@ -3,11 +3,11 @@
 }
 
 .photo-page__intro {
-  margin-bottom: 37px;
+  margin-bottom: 39px;
 }
 
 .photo-page__gallery {
-  margin-bottom: 33px;
+  margin-bottom: 35px;
 }
 
 .photo-page__video-presentation {
@@ -19,12 +19,29 @@
     margin-top: 5px;
   }
 
+  .photo-page__intro {
+    margin-bottom: 74px;
+  }
+
   .photo-page__gallery {
-    margin-bottom: 63px;
+    margin-bottom: 64px;
+  }
+
+  .photo-page__video-presentation {
+    margin-bottom: 71px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .photo-page__intro {
+    margin-bottom: 111px;
+  }
+
+  .photo-page__gallery {
+    margin-bottom: 70px;
+  }
+
+
   .photo-page__video-presentation {
     margin-bottom: 116px;
   }

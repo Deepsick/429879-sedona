@@ -23,9 +23,19 @@
   position: relative;
 
   padding: 22px 20px;
+  padding-top: 20px;
+  padding-bottom: 25px;
   margin: 0;
 
   border: none;
+
+  &:nth-child(3) {
+    padding-bottom: 20px;
+  }
+
+  &:nth-child(4) {
+    padding-bottom: 19px;
+  }
 
   &::before {
     content: "";
@@ -43,6 +53,9 @@
 
 .review__button {
   margin-left: 20px;
+  padding-bottom: 15px;
+  padding-top: 13px;
+  padding-right: 47px;
 }
 
 .review__excerpt {
@@ -52,16 +65,18 @@
 @media (min-width: $tablet-width) {
   .review__title {
     margin-bottom: 29px;
+    padding-right: 1px;
 
     font-size: 30px;
     line-height: 30px;
+    letter-spacing: 0.3px;
   }
 
   .review__text {
     width: 445px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 61px;
+    margin-bottom: 62px;
 
     letter-spacing: 0.1px;
   }
@@ -73,6 +88,10 @@
   }
 
   .review__fieldset {
+    &:nth-child(4) {
+      padding-bottom: 21px;
+    }
+
     &::before {
       width: 0;
       height: 0;
@@ -91,24 +110,39 @@
   }
 
   .review__button {
-    padding-left: 65px;
-    padding-right: 74px;
+    padding-left: 63px;
+    padding-right: 75px;
     margin-left: 0;
   }
 }
 
 
 @media (min-width: $desktop-width) {
+  .review__title {
+    margin-bottom: 28px;
+  }
+
   .review__text {
-    margin-bottom: 46px;
+    margin-bottom: 47px;
   }
 
   .review__form {
-    padding-left: 121px;
-    padding-right: 121px;
+    padding-left: 120px;
+    padding-right: 119px;
   }
 
   .review__button {
-    padding: 14px 148px;
+    padding: 14px 147px;
+    padding-top: 11px;
+  }
+
+  .review__fieldset {
+    &:nth-child(4) {
+      padding-bottom: 19px;
+    }
+  }
+
+  .review__excerpt {
+    padding-top: 3px;
   }
 }
