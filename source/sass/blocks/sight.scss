@@ -1,5 +1,5 @@
 .sight {
-  padding-top: 24px;
+  padding-top: 22px;
 }
 
 .sight__title {
@@ -82,7 +82,7 @@
 @media (min-width: $tablet-width) {
   .sight {
     width: 100%;
-    margin-top: 27px;
+    margin-top: 30px;
 
     &::before {
       content: "";
@@ -158,11 +158,7 @@
   }
 
   .sight__item:nth-child(2) {
-    padding-right: 5px;
-  }
-
-  .sight__item:nth-child(3) {
-    padding-right: 3px;
+    padding-right: 0;
   }
 
   .sight__item:last-child {
@@ -183,9 +179,5 @@
   .sight__list {
     padding: 0;
     padding-left: 4px;
-  }
-
-  .impression__radio:checked + .impression__label::after {
-    left: 15px;
   }
 }

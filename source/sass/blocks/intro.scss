@@ -2,15 +2,14 @@
   position: relative;
 
   padding-top: 88px;
-  padding-bottom: 79px;
+  padding-bottom: 78px;
 
   text-align: center;
 
   background-color: #3d4857;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: center 0; //-226px
+  background-position: center 0;
   background-repeat: no-repeat;
-  background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -27,7 +26,7 @@
     height: 27px;
 
     background-image: url("../img/bg-intro-triangle-mobile.svg");
-    background-position: 0 0;
+    background-position: -1px 0;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -36,7 +35,7 @@
     padding-top: 48px;
     padding-bottom: 61px;
 
-    // background-position: -226px -232px;
+    background-position: center -234px;
   }
 }
 
@@ -55,7 +54,7 @@
     padding-top: 77px;
     padding-bottom: 84px;
 
-    background-position: center 0;
+    background-size: cover;
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -65,6 +64,7 @@
     &::after {
       height: 57px;
 
+      background-position: 0 0;
       background-image: url("../img/bg-intro-triangle-tablet.svg");
     }
 
@@ -72,6 +72,8 @@
       padding-top: 95px;
       padding-bottom: 110px;
       padding-right: 4px;
+
+      background-position: center -228px;
     }
   }
 
@@ -106,6 +108,8 @@
     &--inner-page {
       padding-top: 101px;
       padding-bottom: 114px;
+
+      background-position: 0 -217px;
     }
   }
 

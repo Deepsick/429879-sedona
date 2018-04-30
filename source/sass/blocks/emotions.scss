@@ -2,7 +2,7 @@
   position: relative;
 
   padding: 0 20px;
-  padding-top: 43px;
+  padding-top: 41px;
   margin: 0;
 
   text-align: center;
@@ -24,7 +24,7 @@
 .emotions__label {
   display: block;
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
   padding: 0;
 
   @include fieldset-legend;
@@ -95,7 +95,7 @@
 
   .emotions__field {
     padding-bottom: 12px;
-    margin-bottom: 53px;
+    margin-bottom: 50px;
   }
 }
 
@@ -127,5 +127,9 @@
 
       background-color: #dbdbdb;
     }
+  }
+
+  .emotions__label {
+    margin-bottom: 58px;
   }
 }
