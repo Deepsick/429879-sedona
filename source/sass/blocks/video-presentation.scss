@@ -28,15 +28,17 @@
 
   .video-presentation__title {
     margin-bottom: 29px;
+    padding-left: 2px;
 
     font-size: 30px;
     line-height: 30px;
+    letter-spacing: 0.1px;
   }
 
   .video-presentation__text {
     width: 425px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 73px;
+    margin-bottom: 71px;
   }
 }

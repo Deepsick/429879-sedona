@@ -3,8 +3,8 @@
 }
 
 .video__image {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 201px;
 }
 
 .video__scroll {
@@ -56,7 +56,8 @@
   display: flex;
   margin: 0 20px;
   margin-top: -7px;
-  padding: 22px 18px;
+  padding: 22px 19px;
+  padding-right: 17px;
 
   background-color: #f2f2f2;
 }
@@ -108,14 +109,15 @@
 
 @media (min-width: $tablet-width) {
   .video {
-    padding-right: 60px;
+    padding-right: 56px;
     padding-left: 60px;
   }
 
   .video__scroll {
     left: 128px;
-    right: 186px;
-    top: 133px;
+    right: 198px;
+    top: auto;
+    bottom: 30px;
     z-index: 2;
 
     background-color: transparent;
@@ -127,12 +129,14 @@
 
   .video__controls {
     position: absolute;
-    right: 60px;
+    right: 56px;
     left: 60px;
     bottom: 5px;
 
     margin: 0;
-    padding: 34px 31px;
+    padding: 33px;
+    padding-left: 29px;
+    padding-right: 34px;
 
     background-color: rgba(0, 0, 0, 0.6);
   }
@@ -161,17 +165,25 @@
   .video__fullscreen-icon {
     fill: #ffffff;
   }
+
+  .video__image {
+    height: 499px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .video {
     padding-left: 200px;
-    padding-right: 200px;
+    padding-right: 196px;
   }
 
   .video__controls {
     left: 200px;
-    right: 200px;
+    right: 196px;
+
+    padding-left: 28px;
+    padding-right: 37px;
+    padding-top: 35px;
   }
 
   .video__scroll {

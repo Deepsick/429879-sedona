@@ -29,7 +29,11 @@
           </ul>
         </nav>
         <a class="page-header__logo  logo">
-          <img class="logo__image" src="img/logo-sedona-mobile.svg" alt="Логотип Седона" width="102" height="83">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="logo__image" src="img/logo-sedona-mobile.svg" alt="Логотип Седона" width="102" height="83">
+          </picture>
         </a>
       </header>
 
@@ -54,7 +58,11 @@
                   <p class="promo__number">— №1 —</p>
                   <p class="promo__description">Cедона не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
-                <img class="promo__image" src="img/main-city-mobile@1x.jpg" alt="Мотеле как в кино!" width="320" height="260">
+                <picture class="promo__image-wrapper">
+                  <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+                  <img class="promo__image" src="img/main-city-mobile@1x.jpg" alt="Мотель как в кино!" srcset="img/main-city-mobile@2x.jpg 2x">
+                </picture>
               </div>
               <ul class="promo__list  town-reasons-list">
                 <li class="town-reasons-list__item">
@@ -80,7 +88,11 @@
                 <p class="promo__number">— №2 —</p>
                 <p class="promo__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
-              <img class="promo__image" src="img/main-bridge-mobile@1x.jpg" alt="Мост дьявола" width="320" height="260">
+              <picture class="promo__image-wrapper">
+                <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+                <img class="promo__image" src="img/main-bridge-mobile@1x.jpg" alt="Мост дьявола" srcset="img/main-bridge-mobile@2x.jpg 2x">
+              </picture>
             </li>
             <li class="promo__item  promo__item--grey promo__item--border">
               <h3 class="promo__reason-title">Небольшая площадь</h3>
@@ -110,7 +122,11 @@
 
         <section class="index-page__about  about">
           <h2 class="visually-hidden">Как до нас добраться</h2>
-          <img class="about__map" src="img/bg-map-mobile@1x.jpg" alt="От Аризоны в сторону Флагстафф, не доезжая до Флагстаффа" width="320" height="350">
+          <picture class="about__image-wrapper">
+            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+            <img class="about__map" src="img/bg-map-mobile@1x.jpg" alt="От Аризоны в сторону Флагстафф, не доезжая до Флагстаффа" srcset="img/bg-map-mobile@2x.jpg 2x">
+          </picture>
         </section>
       </main>
 
