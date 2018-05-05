@@ -111,7 +111,7 @@
 
   .modal__description {
     &--error {
-    margin-bottom: 33px;
+      margin-bottom: 33px;
     }
 
     &--success {
@@ -119,6 +119,7 @@
       padding-left: 11px;
     }
   }
+
   .modal__button {
     padding-left: 120px;
     padding-right: 120px;
