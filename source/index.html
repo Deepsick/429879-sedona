@@ -10,6 +10,7 @@
         document.createElement("picture");
     </script>
     <script src="js/picturefill.min.js" async></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   </head>
   <body class="index-page">
 
@@ -142,6 +143,7 @@
 
         <section class="index-page__about  about">
           <h2 class="visually-hidden">Как до нас добраться</h2>
+          <div id="map" class="about__map-ya"></div>
           <picture class="about__image-wrapper">
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
@@ -185,5 +187,6 @@
       </footer>
     </div>
     <script src="js/mobile-menu.js"></script>
+    <script src="js/map-ya.js"></script>
   </body>
 </html>
