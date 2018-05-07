@@ -305,4 +305,24 @@
       padding-right: 62px;
     }
   }
+
+  .promo__image-wrapper {
+    position: relative;
+
+    height: 256px;
+    flex-grow: 1;
+
+    overflow: hidden;
+  }
+
+  .promo__image {
+    position: absolute;
+    top: -71px;
+
+    height: 400px;
+
+    &--bridge {
+      top: -76px;
+    }
+  }
 }
