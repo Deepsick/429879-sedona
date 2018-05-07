@@ -1,14 +1,19 @@
 .modal {
-  position: relative; //fixed
-  left: 0;
-  right: 0;
-  bottom: 10px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
 
+  box-sizing: border-box;
+  width: 320px;
   padding: 45px 46px;
+  margin-left: -160px;
+
   text-align: center;
 
   background-color: #ffffff;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+  transform: translateY(-50%);
 
   &--error {
     padding-bottom: 35px;
@@ -17,12 +22,16 @@
   &--success {
     padding-bottom: 120px;
   }
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .modal__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 27px;
 
   font-size: $m-font-size;
   line-height: $b-line-height;
@@ -34,7 +43,15 @@
 .modal__description {
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
+
+  line-height: 24px;
+
+  &--success {
+    width: 216px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+  }
 }
 
 .modal__wrapper {
@@ -49,8 +66,14 @@
 }
 
 .modal__button {
-  padding: 22px 0;
-  width: 100%;
+  padding: 14px 74px;
+
+  &--success {
+    padding-left: 73px;
+    padding-right: 73px;
+
+    font-size: 18px;
+  }
 }
 
 
@@ -59,17 +82,22 @@
     &--error {
       box-sizing: border-box;
       width: 400px;
+      margin-left: -200px;
     }
 
     &--success {
       box-sizing: border-box;
       width: 640px;
-      padding-left: 108px;
-      padding-right: 108px;
+      padding-left: 99px;
+      padding-right: 102px;
+      padding-bottom: 169px;
+      margin-left: -320px;
     }
   }
 
   .modal__title {
+    margin-bottom: 25px;
+
     font-size: 30px;
     line-height: 40px;
 
@@ -77,15 +105,36 @@
       width: 213px;
       margin-left: auto;
       margin-right: auto;
+      margin-bottom: 24px;
+    }
+  }
+
+  .modal__description {
+    &--error {
+      margin-bottom: 33px;
+    }
+
+    &--success {
+      width: auto;
+      padding-left: 11px;
     }
   }
 
   .modal__button {
+    padding-left: 120px;
+    padding-right: 120px;
+
     font-size: $l-font-size;
     line-height: $b-line-height;
+
+    &--success {
+      padding-left: 152px;
+      padding-right: 152px;
+    }
   }
 
   .modal__wrapper {
+    padding: 43px;
     padding-left: 91px;
     padding-right: 91px;
   }

@@ -1,9 +1,19 @@
 .about {
+  position: relative;
+
   text-align: center;
 }
 
 .about__image-wrapper {
   width: 100%;
+}
+
+.about__map-ya {
+  position: absolute;
+
+  width: 100%;
+  max-width: 1200px;
+  height: 350px;
 }
 
 .about__map {
