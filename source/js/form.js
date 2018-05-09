@@ -11,7 +11,7 @@
   var email      = document.querySelector('#email');
   var patronymic = document.querySelector('#patronymic');
 
-  var CheckInput = function(input) {
+  var checkInput = function(input) {
     if (input.value == '') {
       input.style.borderColor = 'red';
       return true;
@@ -21,8 +21,12 @@
     }
   };
 
+  var refreshInput = function(input) {
+    input.value = '';
+  };
+
   var checkAllRequiredFields = function() {
-    if (CheckInput(name) || CheckInput(surname) || CheckInput(phone) || CheckInput(email) || CheckInput(patronymic)) {
+    if (checkInput(name) || checkInput(surname) || checkInput(phone) || checkInput(email) || checkInput(patronymic)) {
       return false;
     }
     return true;
@@ -36,6 +40,27 @@
   var formOnSubmit = function(evt) {
     evt.preventDefault();
     if (checkAllRequiredFields()) {
+      var xhr = new XMLHttpRequest();
+      var body = 'name=' + encodeURIComponent(name)
+                + '&surname=' + encodeURIComponent(surname)
+                + '&patronymic=' + encodeURIComponent(patronymic)
+                + '&phone=' + encodeURIComponent(phone)
+                + '&email=' + encodeURIComponent(email);
+
+      xhr.open('POST', 'https://echo.htmlacademy.ru', true);
+      xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+      xhr.onreadystatechange = function() {
+        if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+          refreshInput(name);
+          refreshInput(surname);
+          refreshInput(patronymic);
+          refreshInput(phone);
+          refreshInput(email);
+        }
+      };
+      xhr.send(body);
+
       showModal(successModal);
     } else {
       showModal(errorModal);
