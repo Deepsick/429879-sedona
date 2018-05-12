@@ -4,12 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Форма отзыва сайта Седона</title>
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
     <script>
         // Picture element HTML5 shiv
         document.createElement("picture");
     </script>
-    <script src="js/libs/picturefill.min.js" async=""></script>
+    <script src="js/libs/picturefill.min.js" async></script>
   </head>
   <body class="form-page">
 
@@ -66,11 +68,11 @@
               <legend class="info__title">Представьтесь:</legend>
               <p class="info__block">
                 <label class="info__label" for="name">Имя*:</label>
-                <input id="name" class="info__input" type="text" name="name" placeholder="Петр" required="">
+                <input id="name" class="info__input" type="text" name="name" placeholder="Петр" required>
               </p>
               <p class="info__block">
                 <label class="info__label" for="surname">Фамилия*:</label>
-                <input id="surname" class="info__input" type="text" name="surname" placeholder="Иванов" required="">
+                <input id="surname" class="info__input" type="text" name="surname" placeholder="Иванов" required>
               </p>
               <p class="info__block">
                 <label class="info__label" for="patronymic">Отчество:</label>
@@ -82,11 +84,11 @@
               <div class="contacts__flex-container">
                 <p class="contacts__block  contacts__block--phone-icon">
                   <label class="contacts__label" for="phone"><span class="contacts__hidden-block">Контактный</span> телефон*:</label>
-                  <input id="phone" class="contacts__input" type="tel" name="phone" placeholder="Введите телефон" required="">
+                  <input id="phone" class="contacts__input" type="tel" name="phone" placeholder="Введите телефон" required>
                 </p>
                 <p class="contacts__block  contacts__block--email-icon">
                   <label class="contacts__label" for="email">Электронная почта*:</label>
-                  <input id="email" class="contacts__input" type="email" name="email" placeholder="Введите e-mail" required="">
+                  <input id="email" class="contacts__input" type="email" name="email" placeholder="Введите e-mail" required>
                 </p>
               </div>
             </fieldset>
@@ -94,7 +96,7 @@
               <legend class="impression__title">Ваше Общее впечатление:</legend>
               <ul class="impression__list">
                 <li class="impression__item">
-                  <input id="good" class="impression__radio  visually-hidden" type="radio" name="impression" value="good" checked="">
+                  <input id="good" class="impression__radio  visually-hidden" type="radio" name="impression" value="good" checked>
                   <label class="impression__label" for="good">Скорее положительное</label>
                 </li>
                 <li class="impression__item">
@@ -111,15 +113,15 @@
               <legend class="sight__title">Посещенные достопримечательности:</legend>
               <ul class="sight__list">
                 <li class="sight__item">
-                  <input id="the-devil's-bridge" class="sight__checkbox  visually-hidden" type="checkbox" name="the-devil's-bridge" checked="">
+                  <input id="the-devil's-bridge" class="sight__checkbox  visually-hidden" type="checkbox" name="the-devil's-bridge" checked>
                   <label class="sight__label" for="the-devil's-bridge">Мост Дьявола</label>
                 </li>
                 <li class="sight__item">
-                  <input id="hora-bell" class="sight__checkbox  visually-hidden" type="checkbox" name="hora-bell" checked="">
+                  <input id="hora-bell" class="sight__checkbox  visually-hidden" type="checkbox" name="hora-bell" checked>
                   <label class="sight__label" for="hora-bell">Гора-Колокол</label>
                 </li>
                 <li class="sight__item">
-                  <input id="slide-park" class="sight__checkbox  visually-hidden" type="checkbox" name="slide-park" checked="">
+                  <input id="slide-park" class="sight__checkbox  visually-hidden" type="checkbox" name="slide-park" checked>
                   <label class="sight__label" for="slide-park">Слайд-парк</label>
                 </li>
                 <li class="sight__item">
@@ -142,17 +144,17 @@
         <b class="page-footer__hashtag">#VisitSedona</b>
         <ul class="page-footer__social  social">
           <li class="social__item">
-            <a href="" class="social__link  social__link--twitter">
+            <a href="#" class="social__link  social__link--twitter">
               <span class="visually-hidden">Твиттер</span>
             </a>
           </li>
           <li class="social__item">
-            <a href="" class="social__link  social__link--facebook">
+            <a href="#" class="social__link  social__link--facebook">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li class="social__item">
-            <a href="" class="social__link  social__link--youtube">
+            <a href="#" class="social__link  social__link--youtube">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
@@ -185,7 +187,7 @@
         </div>
       </section>
     </div>
-    <script src="js/mobile-menu.js"></script>
-    <script src="js/form.js"></script>
+    <script src="js/mobile-menu.min.js"></script>
+    <script src="js/form.min.js"></script>
   </body>
 </html>
