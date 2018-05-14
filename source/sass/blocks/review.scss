@@ -19,9 +19,23 @@
   text-align: center;
 }
 
-.review__fieldset {
+.review__info--wrapper {
   position: relative;
+}
 
+.review__contacts--wrapper {
+  position: relative;
+}
+
+.review__impression--wrapper {
+  position: relative;
+}
+
+.review__sight--wrapper {
+  position: relative;
+}
+
+.review__fieldset {
   padding: 22px 20px;
   padding-top: 19px;
   padding-bottom: 25px;
@@ -87,6 +101,26 @@
     padding: 0 60px;
   }
 
+  .review__info--wrapper {
+    width: 40.9%;
+    padding-left: 9.1%;
+  }
+
+  .review__contacts--wrapper {
+    width: 100%;
+  }
+
+  .review__impression--wrapper {
+    width: 50%;
+
+    order: -1;
+  }
+
+  .review__sight--wrapper {
+    width: 100%;
+    margin-top: 30px;
+  }
+
   .review__fieldset {
     &:nth-child(4) {
       padding-bottom: 21px;
@@ -133,6 +167,15 @@
 
   .review__button {
     padding: 14px 147px;
+  }
+
+  .review__info--wrapper {
+    width: 401px;
+    padding-left: 79px;
+  }
+
+  .review__sight--wrapper {
+    margin-top: 28px;
   }
 
   .review__fieldset {

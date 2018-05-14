@@ -81,10 +81,29 @@
     padding: 0;
 
     &::before {
-      width: 0;
-      height: 0;
+      content: "";
 
-      background-color: transparent;
+      position: absolute;
+      top: 13px;
+      left: 0;
+
+      height: 1px;
+      width: 128px;
+
+      background-color: #dbdbdb;
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 13px;
+      right: 0;
+
+      height: 1px;
+      width: 128px;
+
+      background-color: #dbdbdb;
     }
   }
 

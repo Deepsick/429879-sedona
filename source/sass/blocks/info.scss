@@ -75,10 +75,8 @@
 
 @media (min-width: $tablet-width) {
   .info {
-    width: 40.9%;
     padding: 0;
     margin-top: 12px;
-    padding-left: 9.1%;
   }
 
   .info__title {
@@ -113,11 +111,6 @@
 
 
 @media (min-width: $desktop-width) {
-  .info {
-    width: 401px;
-    padding-left: 79px;
-  }
-
   .info__block {
     width: 100%;
   }

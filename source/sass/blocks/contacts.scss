@@ -2,8 +2,11 @@
   margin: 0;
   padding: 0;
   padding-right: 2px;
+  margin-left: auto;
+  margin-right: auto;
 
   letter-spacing: 0;
+  text-align: center;
 
   @include fieldset-legend;
 }
@@ -92,10 +95,6 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    position: relative;
-
-    width: 100%;
-    margin-top: 12px;
     padding: 0;
     padding-top: 25px;
 
@@ -150,7 +149,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 74px;
-    margin-top: 13px;
 
     &::before,
     &::after {
