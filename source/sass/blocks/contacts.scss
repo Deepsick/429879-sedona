@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   padding-right: 2px;
+  width: 240px;
+  margin-left: 9%;
+  margin-right: 9%;
 
   letter-spacing: 0;
   text-align: center;
@@ -130,6 +133,10 @@
   }
 
   .contacts__title {
+    width: 285px;
+    margin-left: 28%;
+    margin-right: 28%;
+
     letter-spacing: 0.1px;
     font-size: $l-font-size;
   }
@@ -148,7 +155,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 74px;
+    padding-top: 0;
 
     &::before,
     &::after {
@@ -156,6 +163,12 @@
 
       width: 282px;
     }
+  }
+
+  .contacts__title {
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 74px;
   }
 
   .contacts__block {
