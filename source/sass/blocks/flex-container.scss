@@ -4,3 +4,9 @@
     align-items: flex-start;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .flex-container {
+    max-width: 1200px;
+  }
+}

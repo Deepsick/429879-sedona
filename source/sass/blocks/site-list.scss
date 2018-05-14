@@ -131,7 +131,6 @@
   }
 
   .site-list__item {
-    width: 10%;
     margin-right: 162px;
 
     &:first-child {
@@ -148,11 +147,11 @@
     }
 
     &:nth-child(4n+5) {
-      margin-right: 84px;
+      margin-right: 75px;
     }
 
     &:nth-child(n+5) {
-      width: 12%;
+      width: 14%;
     }
   }
 }
