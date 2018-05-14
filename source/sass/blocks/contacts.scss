@@ -2,8 +2,6 @@
   margin: 0;
   padding: 0;
   padding-right: 2px;
-  margin-left: auto;
-  margin-right: auto;
 
   letter-spacing: 0;
   text-align: center;
@@ -82,10 +80,12 @@
 
   &::-moz-placeholder {
     color: #000000;
+    opacity: 1;
   }
 
   &:-moz-placeholder {
     color: #000000;
+    opacity: 1;
   }
 
   &:-ms-input-placeholder {
