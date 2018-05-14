@@ -42,6 +42,8 @@
   background-color: #f2f2f2;
   border: 4px solid #f2f2f2;
 
+  resize: none;
+
   @include bold-label;
 
   &:hover {
