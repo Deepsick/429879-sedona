@@ -1,5 +1,6 @@
 .impression {
   margin-top: 8px;
+  padding-bottom: 20px;
 }
 
 .impression__title {
@@ -100,6 +101,7 @@
 @media (min-width: $desktop-width) {
   .impression__title {
     margin-bottom: 72.5px;
+    padding-left: 78px;
 
     letter-spacing: 0.2px;
   }
